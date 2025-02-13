@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplazar Palabra</title>
+</head>
+<body>
+    <script>
+        // Frase de ejemplo
+        let frase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+
+        // Palabra a buscar y reemplazar
+        const buscar = /ipsum/;
+        const reemplazar = "dolor";
+
+        // Reemplazar la palabra
+        const nuevaFrase = frase.replace(buscar, reemplazar);
+
+        // Mostrar el resultado
+        document.write("<p>Frase original: " + frase + "</p>");
+        document.write("<p>Frase modificada: " + nuevaFrase + "</p>");
+    </script>
+</body>
+</html>

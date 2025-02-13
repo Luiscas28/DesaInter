@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Correo Electrónico</title>
+</head>
+<body>
+    <script>
+        // Expresión regular para validar un correo electrónico
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Función para validar el correo
+        function validarEmail(email) {
+            return regexEmail.test(email);
+        }
+
+        // Ejemplo de uso
+        const email = "usuario@example.com";
+        if (validarEmail(email)) {
+            document.write("<p>El correo '" + email + "' es válido.</p>");
+        } else {
+            document.write("<p>El correo '" + email + "' no es válido.</p>");
+        }
+    </script>
+</body>
+</html>

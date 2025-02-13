@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraer Números</title>
+</head>
+<body>
+    <script>
+        // Cadena de caracteres
+        const cadena = "Hoy es 25 de abril de 2023 y la temperatura es de 30 grados.";
+
+        // Expresión regular para extraer números
+        const numeros = cadena.match(/\d+/g);
+
+        // Mostrar los números extraídos
+        document.write("<p>Cadena original: " + cadena + "</p>");
+        document.write("<p>Números extraídos: " + numeros.join(", ") + "</p>");
+    </script>
+</body>
+</html>

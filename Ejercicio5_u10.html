@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Contraseña</title>
+</head>
+<body>
+    <script>
+        // Expresión regular para validar la contraseña
+        const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/;
+
+        // Función para validar la contraseña
+        function validarPassword(password) {
+            return regexPassword.test(password);
+        }
+
+        // Ejemplo de uso
+        const password = "Password123";
+        if (validarPassword(password)) {
+            document.write("<p>La contraseña '" + password + "' es válida.</p>");
+        } else {
+            document.write("<p>La contraseña '" + password + "' no es válida.</p>");
+        }
+    </script>
+</body>
+</html>
