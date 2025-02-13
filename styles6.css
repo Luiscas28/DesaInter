@@ -1,0 +1,10 @@
+table {
+    border: 1px solid black; /* Borde de la tabla */
+    border-collapse: collapse; /* Fusiona los bordes de las celdas */
+}
+
+th, td {
+    background-color: lightgray; /* Fondo gris claro para las celdas */
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno */
+}
