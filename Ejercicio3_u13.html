@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contenido de un Nodo</title>
+</head>
+<body>
+    <div id="contenedor">
+        <p id="texto">Este es el contenido original.</p>
+    </div>
+    <button onclick="cambiarContenido()">Cambiar Contenido</button>
+
+    <script>
+        function cambiarContenido() {
+            // Seleccionar el nodo y cambiar su contenido
+            const nodo = document.getElementById("texto");
+            nodo.innerHTML = "Este es el nuevo contenido.";
+        }
+    </script>
+</body>
+</html>

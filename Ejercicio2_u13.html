@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Nodo Hijo</title>
+</head>
+<body>
+    <div id="contenedor">
+        <p>Este es un párrafo existente.</p>
+        <p id="eliminar">Este párrafo será eliminado.</p>
+    </div>
+    <button onclick="eliminarNodo()">Eliminar Nodo</button>
+
+    <script>
+        function eliminarNodo() {
+            // Seleccionar el nodo a eliminar
+            const nodoAEliminar = document.getElementById("eliminar");
+
+            // Eliminar el nodo
+            if (nodoAEliminar) {
+                nodoAEliminar.remove();
+            }
+        }
+    </script>
+</body>
+</html>
