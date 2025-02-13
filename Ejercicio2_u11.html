@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Longitud de Contraseña</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Validar longitud mínima de la contraseña
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            const password = document.getElementById("password").value;
+
+            if (password.length < 8) {
+                alert("La contraseña debe tener al menos 8 caracteres.");
+                event.preventDefault(); // Evitar envío del formulario
+            } else {
+                alert("Contraseña válida.");
+            }
+        });
+    </script>
+</body>
+</html>

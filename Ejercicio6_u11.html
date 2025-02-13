@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Contraseñas Iguales</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="password1">Contraseña:</label>
+        <input type="password" id="password1" name="password1">
+        <label for="password2">Confirmar Contraseña:</label>
+        <input type="password" id="password2" name="password2">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Validar que las contraseñas sean iguales
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            const password1 = document.getElementById("password1").value;
+            const password2 = document.getElementById("password2").value;
+
+            if (password1 !== password2) {
+                alert("Las contraseñas no coinciden.");
+                event.preventDefault(); // Evitar envío del formulario
+            } else {
+                alert("Contraseñas válidas.");
+            }
+        });
+    </script>
+</body>
+</html>

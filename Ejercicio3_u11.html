@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Correo Electrónico</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Expresión regular para validar correo electrónico
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Validar formato de correo electrónico
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            const email = document.getElementById("email").value;
+
+            if (!regexEmail.test(email)) {
+                alert("El correo electrónico no tiene un formato válido.");
+                event.preventDefault(); // Evitar envío del formulario
+            } else {
+                alert("Correo electrónico válido.");
+            }
+        });
+    </script>
+</body>
+</html>
