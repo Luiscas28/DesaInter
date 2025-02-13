@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Cambio de Color</title>
+    <style>
+        #objeto {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="objeto"></div>
+    <button onclick="cambiarColor()">Cambiar Color</button>
+
+    <script>
+        const objeto = document.getElementById("objeto");
+
+        function cambiarColor() {
+            const colores = ["red", "blue", "green", "yellow", "purple"];
+            const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+            objeto.style.backgroundColor = colorAleatorio;
+        }
+    </script>
+</body>
+</html>

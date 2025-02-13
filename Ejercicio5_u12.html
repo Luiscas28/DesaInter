@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Desvanecimiento</title>
+    <style>
+        #objeto {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="objeto"></div>
+    <button onclick="desvanecer()">Desvanecer</button>
+
+    <script>
+        const objeto = document.getElementById("objeto");
+
+        function desvanecer() {
+            let opacidad = 1;
+            const intervalo = setInterval(() => {
+                if (opacidad <= 0) {
+                    clearInterval(intervalo);
+                } else {
+                    opacidad -= 0.01;
+                    objeto.style.opacity = opacidad;
+                }
+            }, 10);
+        }
+    </script>
+</body>
+</html>

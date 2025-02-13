@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Opacidad</title>
+    <style>
+        #objeto {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="objeto"></div>
+    <button onclick="cambiarOpacidad()">Cambiar Opacidad</button>
+
+    <script>
+        const objeto = document.getElementById("objeto");
+        let opacidad = 1;
+
+        function cambiarOpacidad() {
+            opacidad -= 0.1;
+            if (opacidad < 0) opacidad = 1;
+            objeto.style.opacity = opacidad;
+        }
+    </script>
+</body>
+</html>
