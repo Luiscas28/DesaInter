@@ -7,15 +7,15 @@
 </head>
 <body>
     <script>
-        // Expresión regular para validar un número de teléfono de 10 dígitos
+        
         const regexTelefono = /^\d{10}$/;
 
-        // Función para validar el número de teléfono
+        
         function validarTelefono(telefono) {
             return regexTelefono.test(telefono);
         }
 
-        // Ejemplo de uso
+        
         const telefono = "1234567890";
         if (validarTelefono(telefono)) {
             document.write("<p>El número '" + telefono + "' es válido.</p>");
