@@ -15,14 +15,13 @@
     </form>
 
     <script>
-        // Validar que las contraseñas sean iguales
         document.getElementById("formulario").addEventListener("submit", function(event) {
             const password1 = document.getElementById("password1").value;
             const password2 = document.getElementById("password2").value;
 
             if (password1 !== password2) {
                 alert("Las contraseñas no coinciden.");
-                event.preventDefault(); // Evitar envío del formulario
+                event.preventDefault(); 
             } else {
                 alert("Contraseñas válidas.");
             }
