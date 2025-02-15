@@ -1,10 +1,10 @@
 table {
-    border: 1px solid black; /* Borde de la tabla */
-    border-collapse: collapse; /* Fusiona los bordes de las celdas */
+    border: 1px solid black; 
+    border-collapse: collapse;
 }
 
 th, td {
-    background-color: lightgray; /* Fondo gris claro para las celdas */
-    border: 1px solid black; /* Borde de las celdas */
-    padding: 8px; /* Espaciado interno */
+    background-color: lightgray;
+    border: 1px solid black; 
+    padding: 8px; 
 }
