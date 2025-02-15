@@ -13,13 +13,13 @@
     </form>
 
     <script>
-        // Validar campo vacío
+        
         document.getElementById("formulario").addEventListener("submit", function(event) {
             const campo = document.getElementById("campo").value.trim();
 
             if (campo === "") {
                 alert("El campo no puede estar vacío.");
-                event.preventDefault(); // Evitar envío del formulario
+                event.preventDefault();
             } else {
                 alert("Formulario enviado correctamente.");
             }
