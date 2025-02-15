@@ -13,13 +13,13 @@
     </form>
 
     <script>
-        // Validar longitud mínima de la contraseña
+        
         document.getElementById("formulario").addEventListener("submit", function(event) {
             const password = document.getElementById("password").value;
 
             if (password.length < 8) {
                 alert("La contraseña debe tener al menos 8 caracteres.");
-                event.preventDefault(); // Evitar envío del formulario
+                event.preventDefault(); 
             } else {
                 alert("Contraseña válida.");
             }
