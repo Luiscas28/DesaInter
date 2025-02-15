@@ -7,15 +7,12 @@
 </head>
 <body>
     <script>
-        // Expresión regular para validar la contraseña
         const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$/;
 
-        // Función para validar la contraseña
         function validarPassword(password) {
             return regexPassword.test(password);
         }
 
-        // Ejemplo de uso
         const password = "Password123";
         if (validarPassword(password)) {
             document.write("<p>La contraseña '" + password + "' es válida.</p>");
