@@ -7,16 +7,12 @@
 </head>
 <body>
     <script>
-        // Frase de ejemplo
         const frase = "Este es un ejemplo de texto con ejemplo de palabra repetida";
-
-        // Palabra a buscar
+        
         const palabra = "ejemplo";
 
-        // Contar ocurrencias
         const ocurrencias = (frase.match(new RegExp(palabra, "g")) || []).length;
 
-        // Mostrar el resultado
         document.write("<p>La palabra '" + palabra + "' aparece " + ocurrencias + " veces.</p>");
     </script>
 </body>
