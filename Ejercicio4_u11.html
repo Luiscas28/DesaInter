@@ -13,13 +13,13 @@
     </form>
 
     <script>
-        // Validar si el usuario es mayor de edad
+    
         document.getElementById("formulario").addEventListener("submit", function(event) {
             const edad = parseInt(document.getElementById("edad").value);
 
             if (edad < 18) {
                 alert("Debes ser mayor de edad para continuar.");
-                event.preventDefault(); // Evitar envío del formulario
+                event.preventDefault(); 
             } else {
                 alert("Bienvenido, eres mayor de edad.");
             }
