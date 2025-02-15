@@ -14,13 +14,12 @@
     </form>
 
     <script>
-        // Validar que al menos un checkbox esté seleccionado
         document.getElementById("formulario").addEventListener("submit", function(event) {
             const checkboxes = document.querySelectorAll('input[name="opcion"]:checked');
 
             if (checkboxes.length === 0) {
                 alert("Debes seleccionar al menos una opción.");
-                event.preventDefault(); // Evitar envío del formulario
+                event.preventDefault(); 
             } else {
                 alert("Formulario enviado correctamente.");
             }
