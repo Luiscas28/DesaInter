@@ -13,16 +13,16 @@
     </form>
 
     <script>
-        // Expresión regular para validar correo electrónico
+        
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        // Validar formato de correo electrónico
+        
         document.getElementById("formulario").addEventListener("submit", function(event) {
             const email = document.getElementById("email").value;
 
             if (!regexEmail.test(email)) {
                 alert("El correo electrónico no tiene un formato válido.");
-                event.preventDefault(); // Evitar envío del formulario
+                event.preventDefault(); 
             } else {
                 alert("Correo electrónico válido.");
             }
